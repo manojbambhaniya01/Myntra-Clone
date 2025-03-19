@@ -1,0 +1,185 @@
+body{
+    margin:0;
+    padding:0;
+}
+#logo{
+    height: 45px;
+    width:40=5px;
+    margin-left:56px;
+    margin-right: 40px;
+}
+nav a{
+    text-decoration:none;
+    color:black;
+    text-decoration: none;
+    padding: 25px 0;
+    border-bottom:  solid white;
+}
+nav a:hover{
+    border-bottom: 2px solid red;
+}
+nav{
+    display:flex;
+    min-width: 500px;
+    justify-content: space-between;
+    
+}
+sup{
+    color:red;
+}
+
+header{
+    position: sticky;
+    top:0;
+    height: 54px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search{
+    display: flex;
+}
+
+input{
+
+    color:rgb(192, 192, 192);
+    height:40px;
+    min-width: 400px;
+    border: 0;
+    background-color: rgb(243, 243, 243);
+    
+}
+@media screen {
+    input{
+        object-fit: contain;
+    }
+    
+}
+div button{
+    border: 0;
+    background-color:rgb(243, 243, 243);
+}
+#sideop{
+    align-items: center;
+    text-decoration: none;
+    display:flex; 
+    flex-wrap:nowrap;
+    flex-grow:0.1;
+    justify-content:space-around;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 10px;
+}
+#banner{
+    padding-top:20px;
+    margin:25px;
+    width:100%;
+
+}
+.headone{
+    text-transform: uppercase;
+    color:#3e4152;
+    letter-spacing:.15em;
+    font-size: 1.8em;
+    margin:50px 0 10px 30px;
+    max-height: 5em;
+    font-weight:700;
+    
+    
+}
+.offer_img{
+    display:flex;
+    margin:30px 0;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    
+}
+
+#nivea{
+    border: 1px solid rgb(228, 228, 228);
+}
+.imgdescription{
+    padding:10px;
+}
+.pricevalue{
+    display: flex;
+    
+}
+#pastprice{
+    padding: 5px 5px 0px 5px;
+    font-size:small;
+    color:rgb(141, 139, 139);
+    text-decoration:line-through;
+}
+#off{
+    color: rgb(252, 68, 99);
+    font-size:small;
+    padding: 5px 5px 0px 5px;   
+  
+}
+#Carton-London{
+    margin:0;
+}
+#rodium-text{
+    margin: 0;
+    color:rgb(141, 139, 139);
+}
+#addcartButton{
+    width:290px;
+    height: 30px;
+    background-color: rgb(37, 187, 37);
+    border-radius: 10px;
+    margin: 0px;
+}
+.category{
+    display:flex;
+    margin:30px 0;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+}
+.headtwo{
+    text-transform: uppercase;
+    color:#3e4152;
+    letter-spacing:.15em;
+    font-size: 1.8em;
+    margin:50px 0 10px 30px;
+    max-height: 5em;
+    font-weight:700;
+    
+}
+.last_container{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+footer div div a{
+    color:black;
+    text-decoration: 0;
+
+}
+#one{
+    display: flex;
+    flex-direction: column;
+    
+}
+.four{
+    display: flex;
+    flex-direction: column;
+}
+.seven{
+    display: flex;
+    flex-direction: column;
+}
+#ic{
+    margin:5px;
+}
+
+

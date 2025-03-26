@@ -1,0 +1,285 @@
+/* === General Styling === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* === Header Styling (Unchanged) === */
+#logo {
+    height: 45px;
+    width: 40px;
+    margin-left: 56px;
+    margin-right: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 25px 0;
+    border-bottom: solid white;
+}
+
+nav a:hover {
+    border-bottom: 2px solid red;
+}
+
+nav {
+    display: flex;
+    min-width: 500px;
+    justify-content: space-between;
+}
+
+sup {
+    color: red;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    height: 54px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.search {
+    background-color: rgb(243, 243, 243);
+}
+
+input {
+    color: rgb(192, 192, 192);
+    height: 40px;
+    min-width: 400px;
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgb(243, 243, 243);
+}
+
+div button {
+    border: 0;
+    background-color: rgb(243, 243, 243);
+}
+
+#sideop {
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 0.1;
+    justify-content: space-around;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 10px;
+}
+
+.numberofitem {
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    height: 14px;
+    font-size: 12px;
+    width: 14px;
+    top: 12px;
+    right: 29px;
+    color: white;
+    cursor: pointer;
+}
+
+/* === Cart Page Layout === */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 70px auto 20px;
+    max-width: 1200px;
+}
+
+/* === Product List === */
+.product-container {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 10px;
+    gap: 20px;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(200, 200, 200);
+    margin-bottom: 10px;
+}
+
+.product-box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.text-container {
+    flex: 1;
+    padding-left: 20px;
+}
+
+/* === Remove Button === */
+.remove-item {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.remove-item:hover {
+    background-color: darkred;
+}
+
+.deliver-time,
+.deliver-atdate {
+    margin-top: 10px;
+}
+
+#delivery-date {
+    color: rgb(3, 168, 3);
+    font-weight: bold;
+}
+
+/* === Calculation Summary (Side of Items) === */
+main{
+    display:flex;
+    margin: 20px;
+}
+
+.calculation-container h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.price-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.calculation-container {
+    height: 300px;
+    width: 320px;
+    padding: 20px;
+    margin:30px ;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(200, 200, 200);
+    text-align: left;
+    position:absolute;
+    right: 0;
+    top: 70px;
+}
+
+
+.place-order-btn:hover {
+    background-color: darkred;
+}
+.place-order-btn{
+    background-color: rgb(255, 54, 54);
+    height: 30px;
+    color: white;
+}
+
+/* === Responsive Design === */
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculation-container {
+        width: 90%;
+        margin-top: 20px;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-container {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .calculation-container {
+        width: 100%;
+    }
+}
+
+/* === Footer Styling (Unchanged) === */
+footer {
+    background-color: rgb(242, 255, 255);
+    padding: 20px;
+    
+    
+
+}
+
+.last_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer div div a {
+    color: black;
+    text-decoration: none;
+}
+
+#one,
+.four,
+.seven {
+    display: flex;
+    flex-direction: column;
+}
+
+#ic {
+    margin: 5px;
+}
